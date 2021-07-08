@@ -59,3 +59,9 @@ Dot Matrix 는 0 이상인 값만 불이 켜지게 설정되어서 위로 이동
 
 이후 다른 함수에서 flag 검사 후 게임을 중단시킴
 
+
+# Achro-EM Board에서의 표현
+conver_dot 함수를 이용하여 achro-em kit 의 dot matrix에 매핑시켜줌 
+achro-EM 의 dot matrix의 각각 LED는 16진수로 주소가 지정되어있기 때문에 매핑 필요
+![image](https://user-images.githubusercontent.com/66546156/124937226-277e8b00-e042-11eb-9118-837c33def2ac.png)
+![image](https://user-images.githubusercontent.com/66546156/124937161-19306f00-e042-11eb-83b4-234da4f78c01.png)
