@@ -1,0 +1,18 @@
+how to start in targetboard
+
+
+sudo insmod fpga_interface_driver.ko
+->
+sudo insmod fpga_dot_driver.ko
+->
+sudo insmod fpga_text_lcd_driver.ko
+->
+sudo insmod fpga_push_swtich_driver.ko
+->
+sudo mknod /dev/fpga_dot c 262 0
+->
+sudo mknod /dev/fpga_text_lcd c 263 0
+->
+sudo mknod /dev/fpga_push_switch c 265 0
+
+--> sudo ./snake

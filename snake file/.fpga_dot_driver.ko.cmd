@@ -1,0 +1,1 @@
+cmd_/home/ksw/CD/fpga_dot_driver.ko := arm-linux-gnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/ksw/CD/fpga_dot_driver.ko /home/ksw/CD/fpga_dot_driver.o /home/ksw/CD/fpga_dot_driver.mod.o ;  true
