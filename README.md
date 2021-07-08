@@ -56,5 +56,4 @@ Dot Matrix 는 0 이상인 값만 불이 켜지게 설정되어서 위로 이동
 	pthread_mutex_unlock(&mutex_lock);
 
 이후 다른 함수에서 flag 검사 후 게임을 중단시킴
-![image](https://user-images.githubusercontent.com/66546156/124922269-4b3ad480-e034-11eb-8426-044e8b8788f9.png)
 
