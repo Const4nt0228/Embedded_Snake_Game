@@ -63,5 +63,8 @@ Dot Matrix 는 0 이상인 값만 불이 켜지게 설정되어서 위로 이동
 # Achro-EM Board에서의 표현
 conver_dot 함수를 이용하여 achro-em kit 의 dot matrix에 매핑시켜줌 
 achro-EM 의 dot matrix의 각각 LED는 16진수로 주소가 지정되어있기 때문에 매핑 필요
+snake_linux.c 파일의 경우 키보드로 컨트롤이 가능하며
+보드와 합쳐진 snake.c 는 키보드 컨트롤러 함수에 achro-em의 push switch를 이용해서 컨트롤되게끔 함
+
 ![image](https://user-images.githubusercontent.com/66546156/124937226-277e8b00-e042-11eb-9118-837c33def2ac.png)
 ![image](https://user-images.githubusercontent.com/66546156/124937161-19306f00-e042-11eb-83b4-234da4f78c01.png)
