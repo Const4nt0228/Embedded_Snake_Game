@@ -27,6 +27,8 @@ Dot Matrix에 LED 점등 매핑 시 전체 뱀 배열의 1~10행 * 1~8열만 불
 
 # 뱀 게임 알고리즘 - 이동
 
+뱀 객체가 실제로 이동하는 것이 아닌 배열의 값을 프레임마다 변화시켜주면서 뱀이 움직이는것처럼 보이게 하는것임
+
 ![image](https://user-images.githubusercontent.com/66546156/124921962-f5662c80-e033-11eb-9f0e-3177cab5ea22.png)
 ![image](https://user-images.githubusercontent.com/66546156/124921975-fa2ae080-e033-11eb-9d8f-7f1bcde95099.png)
 ![image](https://user-images.githubusercontent.com/66546156/124921986-fbf4a400-e033-11eb-975e-4fba48f084ce.png)
