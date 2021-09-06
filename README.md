@@ -43,6 +43,59 @@ Ex) goToUp() 함수 호출 시
 
 Dot Matrix 는 0 이상인 값만 불이 켜지게 설정되어서 위로 이동한 것 처럼 보이게 됨
 
+void goToUp(){
+	 //방향키 위로 지정되있는 함수
+	 int noMinus = 1; //when snake eat food then arrary's -1 shouldn't happen
+
+	//crash trigger
+	if(snake[x-1][y] > 77 )
+	{
+		printf("    Game over :: Wall Crash   \n");
+		pthread_mutex_lock(&mutex_lock);
+				stopHere = 1;
+		pthread_mutex_unlock(&mutex_lock);
+
+
+	}
+		else if( 0 < snake[x-1][y] && snake[x-1][y] <71 )
+		{  
+			printf("  Game over :: Body Crash \n");
+				pthread_mutex_lock(&mutex_lock);
+				stopHere = 1;
+				pthread_mutex_unlock(&mutex_lock);
+		}
+		else if (snake[x-1][y]==77)
+		{	//printf("find food\n");
+			snake[x-1][y]=snake[x][y]+1;
+			x=x-1;
+			noMinus = 0;
+			//makeLCD();
+			makeFood(SEED);
+		}
+		else{
+			//does not happen crash
+			snake[x-1][y] = snake[x][y]+1;
+			x=x-1;
+			}
+
+
+	 if(noMinus==1){
+	 	for(int i=1; i<11; i++){
+        	for(int j=1; j<8; j++){
+			if(snake[i][j]>0) {
+				if(snake[i][j]!=77) 
+				snake[i][j]= snake[i][j] -1;
+			}
+			
+       	 	}
+		}
+    }
+
+	noMinus = 1;
+	//crash trigger. 
+	
+}
+
 # 뱀 게임 알고리즘 - 충돌 _ 먹이 
 ![image](https://user-images.githubusercontent.com/66546156/124922076-1a5a9f80-e034-11eb-91fd-85b37f361a1d.png)
 ![image](https://user-images.githubusercontent.com/66546156/124922081-1c246300-e034-11eb-9795-967d517bc680.png)
