@@ -43,7 +43,7 @@ Ex) goToUp() 함수 호출 시
 
 Dot Matrix 는 0 이상인 값만 불이 켜지게 설정되어서 위로 이동한 것 처럼 보이게 됨
 
-void goToUp(){
+	void goToUp(){
 	 
 	 int noMinus = 1; //when snake eat food then arrary's -1 shouldn't happen
 
