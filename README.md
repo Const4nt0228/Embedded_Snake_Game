@@ -1,11 +1,11 @@
 # Embedded_Snake_Game : 리눅스 상에서 구현한 뱀 게임
 Achro-EM 보드의 FPGA 디바이스를 이용한 뱀 게임 구현
 
-Push Switch입력으로 방향 제어, 게임 종료
+1. Push Switch입력으로 방향 제어, 게임 종료
 
-Dot Matrix를 통해 뱀의 동작 구현
+2. Dot Matrix를 통해 뱀의 동작 구현
 
-Text LCD를 통해 현재 점수 출력
+3. Text LCD를 통해 현재 점수 출력
 
 gcc -o snake snake.c -lpthread 로 컴파일 
 
@@ -15,6 +15,8 @@ gcc -o snake snake.c -lpthread 로 컴파일
 
 
  # 뱀 게임 알고리즘
+ 뱀 자체의 고유한 객체의 이동과 변화를 구현한 것이 아닌 배열의 성질을 이용하여 움직이는 것처럼, 성장하는 것처럼 만든 코드임. 
+ 
  벽, 먹이, 뱀의 움직임을 구현하기위해 12x9 배열을 선언
  
  ![image](https://user-images.githubusercontent.com/66546156/124921803-c059da00-e033-11eb-981a-b9c6c5cf835c.png)
@@ -25,7 +27,7 @@ Dot Matrix에 LED 점등 매핑을 원활 하게 하기 위해서 뱀 게임의 
 
 뱀의 몸체는 머리와 꼬리 부분으로 구성, 머리 부분은 현재 뱀의 전체 길이를 나타냄.
 
- 벽 객체는 82, 먹이는 77, 뱀의 신체는 최대 10*7 의 길이를 가질 수 있음. 
+ 벽 객체는 82, 먹이는 77, 뱀의 신체는 최대 10x7 의 길이를 가질 수 있음. 
 
 Dot Matrix에 LED 점등 매핑 시 전체 뱀 배열의 1~10행 * 1~8열만 불러와서 매핑 수행하며 0보다 큰 값만 불을 켜 줌.
 
