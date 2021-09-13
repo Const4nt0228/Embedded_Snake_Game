@@ -19,7 +19,9 @@ gcc -o snake snake.c -lpthread 로 컴파일
  
  ![image](https://user-images.githubusercontent.com/66546156/124921803-c059da00-e033-11eb-981a-b9c6c5cf835c.png)
 
-Dot Matrix가 배열 구조로 이루어져 있기 때문에,   Dot Matrix에 LED 점등 매핑을 원활 하게 하기 위해서 뱀 게임의 모든 객체를 12*9 배열의 요소 값으로 표현.
+Dot Matrix가 배열 구조로 이루어져 있기 때문에 (10행 x 7열 크기),  
+
+Dot Matrix에 LED 점등 매핑을 원활 하게 하기 위해서 뱀 게임의 모든 객체를 12행x9열 배열의 요소 값으로 표현.
 
 뱀의 몸체는 머리와 꼬리 부분으로 구성, 머리 부분은 현재 뱀의 전체 길이를 나타냄.
 
