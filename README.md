@@ -1,4 +1,4 @@
-# Embedded_Snake_Game
+# Embedded_Snake_Game : 리눅스 상에서 구현한 뱀 게임
 Achro-EM 보드의 FPGA 디바이스를 이용한 뱀 게임 구현
 Push Switch입력으로 방향 제어, 게임 종료
 Dot Matrix를 통해 뱀의 동작 구현
