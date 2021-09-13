@@ -1,7 +1,10 @@
 # Embedded_Snake_Game : 리눅스 상에서 구현한 뱀 게임
 Achro-EM 보드의 FPGA 디바이스를 이용한 뱀 게임 구현
+
 Push Switch입력으로 방향 제어, 게임 종료
+
 Dot Matrix를 통해 뱀의 동작 구현
+
 Text LCD를 통해 현재 점수 출력
 
 gcc -o snake snake.c -lpthread 로 컴파일 
@@ -123,8 +126,11 @@ Dot Matrix 는 0 이상인 값만 불이 켜지게 설정되어서 위로 이동
 
 # Achro-EM Board에서의 표현
 conver_dot 함수를 이용하여 achro-em kit 의 dot matrix에 매핑시켜줌 
+
 achro-EM 의 dot matrix의 각각 LED는 16진수로 주소가 지정되어있기 때문에 매핑 필요
+
 snake_linux.c 파일의 경우 키보드로 컨트롤이 가능하며
+
 보드와 합쳐진 snake.c 는 키보드 컨트롤러 함수에 achro-em의 push switch를 이용해서 컨트롤되게끔 함
 
 ![image](https://user-images.githubusercontent.com/66546156/124937226-277e8b00-e042-11eb-9118-837c33def2ac.png)
