@@ -44,7 +44,7 @@ Ex) goToUp() 함수 호출 시
 
 2.   전체 배열 값에서 -1 수행.
   		 
-			 	snake[i][j]= snake[i][j] -1
+	snake[i][j]= snake[i][j] -1
   
 Dot Matrix 는 0 이상인 값만 불이 켜지게 설정되어서 위로 이동한 것 처럼 보이게 됨
 
@@ -113,6 +113,7 @@ Dot Matrix 는 0 이상인 값만 불이 켜지게 설정되어서 위로 이동
 ![image](https://user-images.githubusercontent.com/66546156/124922259-47a74d80-e034-11eb-9474-ec1d024ee5a7.png)
 
 진행 방향에서 다음 위치의 값이 벽 (82) 이거나,      몸체 (1이상 70이하)인 경우를 조건문을 통해 게임  종료에 사용되는 flag 변수 StopHere의 값을 변경시킴
+
 	pthread_mutex_lock(&mutex_lock);
 		stopHere = 1;
 	pthread_mutex_unlock(&mutex_lock);
