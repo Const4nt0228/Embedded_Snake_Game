@@ -297,6 +297,7 @@ void* thread_inputUserKey(){
 		{
 		case 'w':
 		 //Update('w'); break;//printf(" UP\n");
+		 //Prevents the occurrence of a self-eating situation when going in the opposite direction
 		 if(keyState=='s'){
 			keyState='s';
 		 }
