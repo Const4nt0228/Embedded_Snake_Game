@@ -298,6 +298,7 @@ void* thread_inputUserKey(){
 		case 'w':
 		 //Update('w'); break;//printf(" UP\n");
 		 //Prevents the occurrence of a self-eating situation when going in the opposite direction
+		 //진행방향의 정반대키는 입력안되게함 ->진행 방향의 반대키를 누를경우 바로 자기 자신에 충돌하기 떄문에 이를 방지함
 		 if(keyState=='s'){
 			keyState='s';
 		 }
