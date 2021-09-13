@@ -38,11 +38,11 @@ snake[x][y] 은 현재 머리의 위치를 나타냄
 
 Ex) goToUp() 함수 호출 시
 진행 방향에서 다음 위치의 값에 머리 위치 값 +1 을 대입 후 머리 위치를 변경.
-		snake[x-1][y]=snake[x][y]+1;		
-		x=x-1;
+		  snake[x-1][y]=snake[x][y]+1;		
+	  	x=x-1;
 2.   전체 배열 값에서 -1 수행.
-		 snake[i][j]= snake[i][j] -1
-
+  		 snake[i][j]= snake[i][j] -1
+  
 Dot Matrix 는 0 이상인 값만 불이 켜지게 설정되어서 위로 이동한 것 처럼 보이게 됨
 
 	void goToUp(){
