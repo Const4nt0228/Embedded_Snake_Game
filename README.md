@@ -9,8 +9,8 @@ Achro-EM 보드의 FPGA 디바이스를 이용한 뱀 게임 구현
 
 gcc -o snake snake.c -lpthread 로 컴파일 
 
-.c 파일은 보드 없이 리눅스 커널에서 동작되는 코드로 이거 베이스로 다른거 만들면됨
-
+.c 파일은 보드 없이 리눅스 커널에서 동작되는 코드로 이거 베이스로 다른거 만들면된다   
+ 
 ![image](https://user-images.githubusercontent.com/66546156/124921770-b637db80-e033-11eb-8f21-54d75bbf9f73.png)
 
 
